@@ -58,7 +58,7 @@ func handleConn(conn net.Conn) {
 	conn.Close()
 }
 
-func main() {
+func Main() {
 	fmt.Println("Iniciando servidor...")
 	listener, err := net.Listen("tcp", "localhost:3000")
 	if err != nil {
