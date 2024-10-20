@@ -14,7 +14,7 @@ func mustCopy(dst io.Writer, src io.Reader) {
 	}
 }
 
-func main() {
+func Main() {
 	conn, err := net.Dial("tcp", "localhost:3000")
 	fmt.Println("Connected!")
 	if err != nil {
